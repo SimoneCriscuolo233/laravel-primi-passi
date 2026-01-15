@@ -16,10 +16,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about-us">About us</a>
+          <a class="nav-link" href="{{route('about-us')}}">About us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#">Link</a>
@@ -33,5 +33,8 @@
   </div>
 </nav>
   <h1>Home</h1>
+  <p>
+    {{$info}}
+  </p>
 </body>
 </html>
